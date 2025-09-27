@@ -1,73 +1,95 @@
-# React + TypeScript + Vite
+📖 PageTurner: Alex's Open Library Finder
+<img width="1915" height="831" alt="Screenshot 2025-09-27 145338" src="https://github.com/user-attachments/assets/209e46f1-27a7-4dea-b932-098facced3c3" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  A responsive, high-performance book search application built for college students using React and the Open Library API.
 
-Currently, two official plugins are available:
+⭐ Project Summary
+  This application solves the "Book Finder" challenge. It is specifically tailored for Alex, the College Student, providing    powerful search, immediate feedback, and organization tools to simplify academic research and reading discovery.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Persona Focus: Alex
+  Alex needs efficiency. The application is designed to minimize clicks and provide key data points (Year, Editions) upfront   so Alex can quickly evaluate the relevance of a book without navigating to a separate detail page.
 
-## React Compiler
+🚀 Key Features
+Feature
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Description
 
-## Expanding the ESLint configuration
+Value for Alex
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🔍 Core Search & Fetching
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Seamless integration with the Open Library API for fast results by title, author, or keyword.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Finds resources quickly and reliably.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🔄 Client-Side Sorting
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Allows results to be sorted by Year (Newest First) and Edition Count (Most Available).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Prioritizes current information or easily accessible books.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🔢 Pagination
+
+Results are displayed 20 items per page with full navigation controls.
+
+Handles large research topics without overwhelming the interface.
+
+📱 Responsive UI/UX
+
+Built with a mobile-first approach using Tailwind CSS.
+
+Works flawlessly whether Alex is researching on a desktop or reading on a phone/tablet.
+
+💡 Robust Error Handling
+
+Clear messages for network failures or zero results found.
+
+Ensures a frustration-free user experience.
+
+🛠️ Technical Deep Dive
+Stack
+Framework: React (with TypeScript)
+
+Styling: Tailwind CSS (Stable v3)
+
+Data Source: Open Library Search API
+
+State Management: React Hooks (useState, useMemo, useCallback)
+
+Rationale & Problem Solving
+Code Integrity: The project utilizes TypeScript and a clean separation of concerns (/api, /utils, /components) for maximum maintainability.
+
+Configuration Fix: The initial build encountered conflicts with a pre-release version of Tailwind CSS. This was resolved by downgrading to the stable v3 (^3.4.1) and verifying the postcss.config.js configuration.
+
+⚙️ Getting Started (Local Setup)
+To run this project locally, follow these steps:
+
+Clone the Repository:
+
+git clone [YOUR_REPOSITORY_URL_HERE]
+cd book-finder-alex
+
+Install Dependencies:
+
+    npm install
+
+Run the Development Server:
+
+    npm run dev
+
+Access the application at http://localhost:5173
+
+✅ Submission Checklist (Required Links)
+This project fulfills all three levels of the challenge. Please replace the placeholders below with your final links.
+
+1. Working Application (Level 2: 30%)
+Status: Deployed
+Link:
+
+3. Code Sharing (Level 3: 20%)
+Status: Repository
+Link: https://github.com/AanyaSeth22/book-finder-alex.git
+
+4. Working with AI (Level 1: 50%)
+Status: Chat History
+Link: 
