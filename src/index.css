@@ -1,0 +1,11 @@
+/* src/index.css */
+
+/* Tailwind Directives: MUST be at the top */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom fonts or global styles (optional) */
+body {
+  font-family: 'Inter', sans-serif;
+}
