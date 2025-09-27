@@ -66,7 +66,7 @@ To run this project locally, follow these steps:
 
 Clone the Repository:
 
-git clone [YOUR_REPOSITORY_URL_HERE]
+git clone https://github.com/AanyaSeth22/book-finder-alex.git
 cd book-finder-alex
 
 Install Dependencies:
@@ -83,13 +83,19 @@ Access the application at http://localhost:5173
 This project fulfills all three levels of the challenge. Please replace the placeholders below with your final links.
 
 1. Working Application (Level 2: 30%)
+   
 Status: Deployed
-Link:
+
+Link:https://book-finder-alex-hlwu.vercel.app/
 
 3. Code Sharing (Level 3: 20%)
+
 Status: Repository
+
 Link: https://github.com/AanyaSeth22/book-finder-alex.git
 
 4. Working with AI (Level 1: 50%)
+
 Status: Chat History
-Link: 
+
+Link:https://g.co/gemini/share/83d7a1383a09 
