@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useMemo } from 'react';
 // 💡 IMPORTANT: Using 'import type' for interfaces
-import type { AppState, SortKey, Book } from './types'; 
+import type { AppState, SortKey} from './types'; 
 import { searchBooks } from './api/openLibrary';
 import { sortBooks } from './utils/sorter';
 
